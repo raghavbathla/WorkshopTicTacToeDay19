@@ -1,5 +1,6 @@
 package ticTacToe;
 
+import java.util.Random;
 import java.util.Scanner;
 
 public class TicTacToeClass {
@@ -39,6 +40,18 @@ public class TicTacToeClass {
 
         }
 
+    }
+    private void firstChance() {
+        Random random = new Random();
+        System.out.println("Enter 0 for Head or 1 for  tails");
+        Scanner sc = new Scanner(System.in);
+        int choosen = sc.nextInt();
+        int num = random.nextInt(2);
+        if (num == choosen) {
+            System.out.println("User Win");
+        } else {
+            System.out.println("Computer Win");
+        }
     }
      private void showBoard(char[] board) {
         System.out.println(board[1] + "|" + board[2] + "|" + board[3]);
