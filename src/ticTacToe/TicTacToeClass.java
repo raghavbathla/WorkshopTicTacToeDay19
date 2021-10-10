@@ -34,16 +34,13 @@ public class TicTacToeClass {
             computer = 'X';
         }
     }
-<<<<<<< HEAD
-    static private void showBoard(char[] board) {
-=======
 
     private void makeMove(char[] board, char user) {
         System.out.println("Enter the position from 1 to 9");
         Scanner scanner = new Scanner(System.in);
         int move = scanner.nextInt();
-        boolean val= true;
-        while (val){
+        boolean val = true;
+        while (val) {
 
             if (board[move] == ' ') {
                 board[move] = user;
@@ -89,13 +86,10 @@ public class TicTacToeClass {
     }
 
     public void showBoard(char[] board) {
->>>>>>> 2720a440c40e6ea6ee932aa8bf56dadb0386223a
         System.out.println(board[1] + "|" + board[2] + "|" + board[3]);
         System.out.println(board[4] + "|" + board[5] + "|" + board[6]);
         System.out.println(board[7] + "|" + board[8] + "|" + board[9]);
     }
-<<<<<<< HEAD
-=======
 
     public void startGame(char[] board, char user, char computer) {
         while (running) {
@@ -182,7 +176,7 @@ public class TicTacToeClass {
                     arr[2] = 7;
                     break;
             }
-            if(nDone){
+            if (nDone) {
                 if (line.equals(compWin) || line.equals(compWin1) || line.equals(compWin2)) {
 
                     for (int j : arr) {
@@ -195,7 +189,7 @@ public class TicTacToeClass {
             }
 
 
-            if(nDone){
+            if (nDone) {
                 if (line.equals(userWin) || line.equals(userWin1) || line.equals(userWin2)) {
                     for (int j : arr) {
                         if (board[j] == ' ') {
@@ -260,16 +254,14 @@ public class TicTacToeClass {
                 running = false;
             }
         }
-if (running)
-{
-    if (count == 9) {
-        winner = "Draw";
-        running = false;
-    }
-}
+        if (running) {
+            if (count == 9) {
+                winner = "Draw";
+                running = false;
+            }
+        }
 
     }
 
 
->>>>>>> 2720a440c40e6ea6ee932aa8bf56dadb0386223a
 }
