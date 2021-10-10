@@ -37,17 +37,17 @@ public class TicTacToeClass {
 
     private void makeMove(char[] board, char user) {
         System.out.println("Enter the position from 1 to 9");
-        Scanner scanner = new Scanner(System.in);
-        int move = scanner.nextInt();
+
         boolean val = true;
         while (val) {
-
+            Scanner scanner = new Scanner(System.in);
+            int move = scanner.nextInt();
+            System.out.println("Enter the position from 1 to 9");
             if (board[move] == ' ') {
                 board[move] = user;
                 val = false;
             } else {
                 System.out.println("Not empty");
-
             }
         }
 

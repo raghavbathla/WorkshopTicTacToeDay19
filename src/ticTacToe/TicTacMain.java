@@ -11,7 +11,5 @@ ticTacToeClass.showBoard(board);
 ticTacToeClass.firstMove(board,user,computer);
 ticTacToeClass.showBoard(board);
 ticTacToeClass.startGame(board,user,computer);
-
-
     }
 }
